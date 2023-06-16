@@ -123,10 +123,11 @@ format = "[pkg $version ]($style)| "
 style = "bold red"
 
 [python]
+disabled = true
 # format= 'via [${symbol}${pyenv_prefix}(${version} )(($virtualenv) )]($style)' default
-format = "[${symbol}${pyenv_prefix}(${version} )(($virtualenv) )]($style)"
+format = "[${symbol}(${version})${pyenv_prefix}]($style)"
 symbol = "🐍"
-pyenv_version_name = false
+pyenv_version_name = true
 version_format = "v${major}.${minor}"
 
 [dotnet]
@@ -142,7 +143,7 @@ diverged = "⇕"
 up_to_date = "✓"
 untracked = "[?($count)](gray)"
 stashed = "$"
-modified = "[!($count)(yellow)"
+modified = "[!($count)](yellow)"
 staged = "[++($count)](green)"
 renamed = ">>"
 deleted = "✘"
