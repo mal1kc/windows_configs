@@ -1,215 +1,417 @@
 {
-    "editor.suggestSelection": "first",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.wordWrap": "on",
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    "liveServer.settings.ChromeDebuggingAttachment": true,
-    "terminal.integrated.tabs.enabled": true,
-    "better-comments.tags": [
-        {
-            "tag": "",
-            "color": "#BB8D70",
-            "bold": true
-        },
-        {
-            "tag": "!",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },       {
-            "tag": "FIXME",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "underline": true,
-            "backgroundColor": "black",
-            "bold": true,
-            "italic": false
-        }
-        ,
-        {
-            "tag": "?",
-            "color": "#3498DB",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "//",
-            "color": "#474747",
-            "strikethrough": true,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "todo",
-            "color": "#FF8C00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "*",
-            "color": "#98C379",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "IMPORTANT",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "H1",
-            "color": "#6B2C70",
-            "strikethrough": false,
-            "underline": true,
-            "backgroundColor": "#9ae897",
-            "bold": true,
-            "italic": true
-        },
-        {
-            "tag": "H2",
-            "color": "#936697",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": true
-        },
-        {
-            "tag": "Q:",
-            "color": "#D16927",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "#2f2f2f",
-            "bold": true,
-            "italic": true
-        },
-        {
-            "tag": "SUMMARY",
-            "color": "#37dd11",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": true
-        },
-        {
-            "tag": "-",
-            "color": "#5D9160",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": true
-        }
-    ],
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorWidth": 2,
-    "terminal.integrated.defaultProfile.linux": "fish",
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "terminal.integrated.gpuAcceleration": "on",
-    "glassit.alpha": 220,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+  "editor.suggestSelection": "first",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.wordWrap": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "liveServer.settings.ChromeDebuggingAttachment": true,
+  "terminal.integrated.tabs.enabled": true,
+  "better-comments.tags": [
+    {
+      "tag": "",
+      "color": "#BB8D70",
+      "bold": true
     },
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "files.exclude": {
-        "**/.DS_Store": false,
-        "**/.git": false,
-        "**/.hg": false,
-        "**/.svn": false,
-        "**/CVS": false,
-        "**/Thumbs.db": false,
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
+    {
+      "tag": "FIXME",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": true,
+      "backgroundColor": "black",
+      "bold": true,
+      "italic": false
     },
-    "editor.renderControlCharacters": true,
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "git.autofetch": true,
-    "git.allowForcePush": true,
-    "git.alwaysShowStagedChangesResourceGroup": true,
-    "[jsonc]": {
-        "editor.colorDecorators": true,
-        "editor.suggest.showColors": true,
-        "editor.bracketPairColorization.enabled": true
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "liveServer.settings.donotShowInfoMsg": true,
-    "editor.renderWhitespace": "boundary",
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [],
-            "icon": "terminal-cmd"
-        }
-        
-        },
-    
-    "csharp.semanticHighlighting.enabled": true,
-    "razor.trace": "Messages",
-    "razor.devmode": true,
-    "editor.largeFileOptimizations": false,
-    "editor.unicodeHighlight.invisibleCharacters": false,
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "telemetry.telemetryLevel": "crash",
-    "editor.inlineSuggest.enabled": true,
-    "workbench.colorTheme": "Catppuccin Frappé",
-    "terminal.external.windowsExec": "wt.exe",
-    "files.autoSave": "onFocusChange",
-    "workbench.editor.splitInGroupLayout": "vertical",
-    "files.simpleDialog.enable": true,
-    "workbench.activityBar.visible": true,
-    "cSpell.language": "en,tr",
-    "python.envFile": "${workspaceFolder}/.env",
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "editor.fontFamily": "Fira Code Nerd Font,Victor Mono Medium",
-    "jupyter.askForKernelRestart": false,
-    "terminal.external.linuxExec": "kitty",
-    "window.menuBarVisibility": "toggle",
-    "vscode-neovim.logOutputToConsole": true,
-    "vscode-neovim.neovimInitVimPaths.linux": "/home/mal1kc/.config/nvim-code/init.lua",
-    "editor.lineNumbers": "relative",
-    "editor.cursorSurroundingLines": 10,
-    "arduino.useArduinoCli": true,
-    "explorer.confirmDelete": false,
-    "editor.minimap.enabled": false,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    // "dev.containers.dockerPath": "podman",
-    // "docker.composeCommand": "podman-compose",
-    // "docker.dockerPath": "podman",
-    // "dev.containers.dockerComposePath": "podman-compose"
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "IMPORTANT",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "H1",
+      "color": "#6B2C70",
+      "strikethrough": false,
+      "underline": true,
+      "backgroundColor": "#9ae897",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "H2",
+      "color": "#936697",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "Q:",
+      "color": "#D16927",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#2f2f2f",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "SUMMARY",
+      "color": "#37dd11",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "-",
+      "color": "#5D9160",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": true
+    }
+  ],
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.gpuAcceleration": "on",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.svn": false,
+    "**/CVS": false,
+    "**/Thumbs.db": false,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.renderControlCharacters": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.allowForcePush": true,
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "[jsonc]": {
+    "editor.colorDecorators": true,
+    "editor.suggest.showColors": true,
+    "editor.bracketPairColorization.enabled": true
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.renderWhitespace": "boundary",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    }
+  },
+  "csharp.semanticHighlighting.enabled": true,
+  "razor.trace": "Messages",
+  "razor.devmode": true,
+  "editor.largeFileOptimizations": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "telemetry.telemetryLevel": "crash",
+  "editor.inlineSuggest.enabled": true,
+  "terminal.external.windowsExec": "C:\\Program Files\\WezTerm\\wezterm-gui.exe",
+  "files.autoSave": "onFocusChange",
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "files.simpleDialog.enable": true,
+  "cSpell.language": "en,tr",
+  "python.envFile": "${workspaceFolder}/.venv",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.fontFamily": "Iosevka,FiraCode Nerd Font,Operator Mono,Fira Code,Fira Code Nerd Font,Victor Mono Medium",
+  "jupyter.askForKernelRestart": false,
+  "terminal.external.linuxExec": "kitty",
+  "window.menuBarVisibility": "toggle",
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 10,
+  "arduino.useArduinoCli": true,
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Kanagawa",
+  "editor.fontLigatures": true,
+  "workbench.editorAssociations": {
+    "*.pdf": "default"
+  },
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "clangd.path": "c:\\Users\\mal1kc\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\17.0.3\\clangd_17.0.3\\bin\\clangd.exe",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "editor.minimap.enabled": false,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        // do mouse hover , show signature help
+        "editor.action.showHover"
+      ],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-i>": false,
+    "<C-q>": false,
+    "<C-b>": false,
+    "<C-k>": false,
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        ",",
+      ],
+      "commands": [
+        "workbench.action.showAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "d"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "n"
+      ],
+      "commands": [
+        "workbench.action.openNextRecentlyUsedEditorInGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.openPreviousRecentlyUsedEditorInGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "r"
+      ],
+      "commands": [
+        "workbench.action.reopenClosedEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex1"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.showAllSymbols"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "r"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.closeOtherEditors"
+      ]
+    },
+    // do select file via breadcrumbs
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "b"
+      ],
+      "commands": [
+        "breadcrumbs.focusAndSelect"
+      ]
+    },
+  ],
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "vim.smartRelativeLine": true
 }

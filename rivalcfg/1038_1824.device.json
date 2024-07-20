@@ -1,0 +1,12 @@
+{
+  "default": {
+    "sensitivity": "5600,8500",
+    "polling_rate": 1000,
+    "z1_color": "56119f",
+    "z2_color": "56119f",
+    "z3_color": "0f7f9f",
+    "logo_color": "001102",
+    "light_effect": "steady",
+    "buttons_mapping": "buttons(button1=button1; button2=button2; button3=button3; button4=button4; button5=button5; button6=dpi; scrollup=scrollup; scrolldown=scrolldown; layout=qwerty)"
+  }
+}

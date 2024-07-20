@@ -98,15 +98,15 @@ map_symbol = true
 disabled = false
 
 [cmd_duration]
-min_time = 60_000
+min_time = 180_000
 format = "[$duration](italic green) "
-min_time_to_notify = 180_000
+min_time_to_notify = 900_000
 show_notifications = true
 
 [directory]
 format = "[$path]($style)[$read_only]($read_only_style) "
 fish_style_pwd_dir_length = 1
-truncation_length = 2
+truncation_length = 1
 truncation_symbol = '../'
 
 
@@ -119,6 +119,7 @@ utc_time_offset = "-5"
 time_range = "10:00:00-14:00:00"
 
 [package]
+disabled = true
 format = "[pkg $version ]($style)| "
 style = "bold red"
 
