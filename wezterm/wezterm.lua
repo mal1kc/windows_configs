@@ -3,7 +3,7 @@ local wezterm = require("wezterm")
 
 local act = wezterm.action
 
-local leader_key = { key = "a", mods = "CTRL", timeout_miliseconds = 1000 }
+local leader_key = { key = "b", mods = "CTRL", timeout_miliseconds = 1000 }
 	or {
 		key = "Space",
 		mods = "CTRL|SHIFT",
@@ -260,10 +260,20 @@ return {
 	color_scheme_dirs = wallust_colors.color_scheme_dirs,
 	default_prog = profiles_menu[1].args,
 	default_cwd = os.getenv("HOME"),
-	window_background_opacity = 0.93,
+	window_background_opacity = 0.96,
 	text_background_opacity = 0.98,
 	default_cursor_style = "SteadyBar",
 
+	window_frame = {
+		font_size = 13.0,
+	},
+
+	window_padding = {
+		top = 10,
+		bottom = 10,
+		left = 10,
+		right = 10,
+	},
 	window_decorations = "RESIZE",
 	hide_tab_bar_if_only_one_tab = true,
 	launch_menu = profiles_menu,
@@ -271,8 +281,25 @@ return {
 	keys = {
 		-- {key ='m',mods='CMD',action='DisableDefaultAssignment'},
 		{ key = "l", mods = "ALT", action = act.ShowLauncher },
-		{ key = "-", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
-		{ key = "|", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+		{ key = "o", mods = "LEADER", action = act.ActivatePaneDirection("Next") },
+		{ key = '"', mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+		{ key = "%", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+		{ key = "[", mods = "LEADER", action = act.ActivateCopyMode },
+		{
+			key = "c",
+			mods = "LEADER",
+			action = act.SpawnTab("CurrentPaneDomain"),
+		},
+		{
+			key = "p",
+			mods = "LEADER",
+			action = act.ActivateTabRelative(-1),
+		},
+		{
+			key = "n",
+			mods = "LEADER",
+			action = act.ActivateTabRelative(1),
+		},
 		{
 			key = "UpArrow",
 			mods = "SHIFT",
@@ -293,7 +320,7 @@ return {
 			}),
 		},
 		{
-			key = "a",
+			key = "b",
 			mods = "LEADER",
 			action = act.ActivateKeyTable({
 				one_shot = false,

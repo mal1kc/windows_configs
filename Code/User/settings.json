@@ -413,5 +413,5 @@
     "scminput": false
   },
   "github.copilot.editor.enableAutoCompletions": true,
-  "vim.smartRelativeLine": true
+  "vim.smartRelativeLine": true,
 }
